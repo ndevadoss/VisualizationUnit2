@@ -1,7 +1,8 @@
 public class BelleFille {
 
+  private boolean showImage = false;   
   
-  void renderImage() {
+  public void renderImage() {
      PImage belleFille = loadImage("belleFille.jpg"); 
      image(belleFille, 700, 700); 
      belleFille.resize(350, 350);
@@ -10,7 +11,7 @@ public class BelleFille {
      }
   }
 
-  void draw() {
+  public void draw() {
    outline();
    nose();
    mouth();
@@ -21,7 +22,7 @@ public class BelleFille {
 
   private void outline() {
         noStroke();
-        fill(255, 255, 255);
+        fill(250, 250, 250);
         beginShape();
         curveVertex(80, 498);
         curveVertex(103, 499);
@@ -30,9 +31,9 @@ public class BelleFille {
         curveVertex(97, 469);
         curveVertex(99, 464);
         curveVertex(101, 473);
-        endShape();
+        //endShape();
 
-        beginShape();
+        //beginShape();
         curveVertex(101, 473);
         curveVertex(98, 465);
         curveVertex(98, 455);
@@ -40,9 +41,9 @@ public class BelleFille {
         curveVertex(99, 439);
         curveVertex(100, 431);
         curveVertex(100, 431);
-        endShape();
+        //endShape();
 
-        beginShape();
+        //beginShape();
         curveVertex(99, 439);
         curveVertex(100, 433);
         curveVertex(103, 425);
@@ -51,9 +52,9 @@ public class BelleFille {
         curveVertex(110, 400);
         curveVertex(115, 396);
         curveVertex(115, 396);
-        endShape();
+        //endShape();
 
-        beginShape();
+        //beginShape();
         curveVertex(115, 396);
         curveVertex(114, 398);
         curveVertex(115, 393);
@@ -61,18 +62,18 @@ public class BelleFille {
         curveVertex(116, 385);
         curveVertex(118, 383);
         curveVertex(118, 383);
-        endShape();
+        //endShape();
 
-        beginShape();
+        //beginShape();
         curveVertex(118, 383);
         curveVertex(118, 383);
         curveVertex(114, 377);
         curveVertex(115, 371);
         curveVertex(114, 363);
         curveVertex(115, 353);
-        endShape();
+        //endShape();
 
-        beginShape();
+        //beginShape();
         curveVertex(115, 367);
         curveVertex(115, 367);
         curveVertex(115, 353);
@@ -81,35 +82,35 @@ public class BelleFille {
         curveVertex(117, 330);
         curveVertex(118, 320);
         curveVertex(120, 311);
-        endShape();
+        //endShape();
 
-        beginShape();
+        //beginShape();
         curveVertex(118, 311);
         curveVertex(118, 320);
         curveVertex(122, 301);
         curveVertex(126, 283);
         curveVertex(126, 283);
-        endShape();
+        //endShape();
 
-        beginShape();
+        //beginShape();
         curveVertex(126, 284);
         curveVertex(126, 284);
         curveVertex(127, 275);
         curveVertex(130, 262);
         curveVertex(138, 249);
         curveVertex(149, 244);
-        endShape();
+        //endShape();
 
-        beginShape();
+        //beginShape();
         curveVertex(138, 251);
         curveVertex(138, 251);
         curveVertex(138, 245);
         curveVertex(148, 234);
         curveVertex(156, 223);
         curveVertex(159, 233);
-        endShape();
+        //endShape();
 
-        beginShape();
+        //beginShape();
         curveVertex(156, 223);
         curveVertex(156, 223);
         curveVertex(159, 223);
@@ -118,36 +119,36 @@ public class BelleFille {
         curveVertex(184, 166);
         curveVertex(210, 185);
         curveVertex(210, 185);
-        endShape();
+        //endShape();
 
-        beginShape();
+        //beginShape();
         curveVertex(210, 185);
         curveVertex(210, 185);
         curveVertex(215, 202);
         curveVertex(230, 211);
         curveVertex(241, 221);
         curveVertex(241, 221);
-        endShape();
+        //endShape();
 
-        beginShape();
+        //beginShape();
         curveVertex(241, 221);
         curveVertex(241, 221);
         curveVertex(255, 228);
         curveVertex(259, 240);
         curveVertex(274, 239);
         curveVertex(284, 236);
-        endShape();
+        //endShape();
 
-        beginShape();
+        //beginShape();
         curveVertex(274, 239);
         curveVertex(274, 239);
         curveVertex(289, 241);
         curveVertex(289, 249);
         curveVertex(289, 250);
         curveVertex(289, 250);
-        endShape();
+        //endShape();
 
-        beginShape();
+        //beginShape();
         curveVertex(289, 249);
         curveVertex(289, 249);
         curveVertex(323, 239);
@@ -157,18 +158,18 @@ public class BelleFille {
         curveVertex(309, 338);
         curveVertex(304, 340);
         curveVertex(304, 340);
-        endShape();
+        //endShape();
 
-        beginShape();
+        //beginShape();
         curveVertex(323, 310);
         curveVertex(323, 310);
         curveVertex(328, 316);
         curveVertex(336, 365);
         curveVertex(341, 391);
         curveVertex(341, 391);
-        endShape();
+        //endShape();
 
-        beginShape();
+        //beginShape();
         curveVertex(341, 391);
         curveVertex(341, 391);
         curveVertex(324, 406);
@@ -395,5 +396,5 @@ public class BelleFille {
         curveVertex(201, 329);
         endShape();
     }
-    private boolean showImage = false;
+    
 }
