@@ -1,11 +1,11 @@
 public class BelleFille {
 
-  private boolean showBelleFillesImage = true;
+  
   void renderImage() {
      PImage belleFille = loadImage("belleFille.jpg"); 
      image(belleFille, 700, 700); 
      belleFille.resize(350, 350);
-     if(showBelleFillesImage) {
+     if(showImage) {
        image(belleFille, 0, 177);
      }
   }
@@ -14,7 +14,9 @@ public class BelleFille {
    outline();
    nose();
    mouth();
-   
+   tongue();
+   leftEye();
+   rightEye();
   }
 
   private void outline() {
@@ -202,6 +204,196 @@ public class BelleFille {
     }
     
     private void mouth() {
-    
+        fill(0, 0, 0);
+        beginShape();
+        curveVertex(119, 380);
+        curveVertex(122, 392);
+        curveVertex(137, 407);
+        curveVertex(156, 420);
+        curveVertex(165, 423);
+        endShape();   
+        
+        beginShape();
+        curveVertex(156, 420);
+        curveVertex(156, 420);
+        curveVertex(165, 422);
+        curveVertex(179, 422);
+        curveVertex(185, 419);
+        curveVertex(201, 402);
+        curveVertex(204, 415);
+        curveVertex(204, 415);
+        endShape(); 
+        
+        beginShape();
+        curveVertex(201, 402);
+        curveVertex(201, 402);
+        curveVertex(202, 417);
+        curveVertex(190, 429);
+        curveVertex(175, 440);
+        curveVertex(156, 447);
+        curveVertex(156, 447);
+        endShape(); 
+        
+        beginShape();
+        curveVertex(175, 440);
+        curveVertex(173, 424);
+        curveVertex(173, 431);
+        curveVertex(162, 432);
+        curveVertex(168, 435);
+        curveVertex(157, 446);
+        curveVertex(157, 446);
+        endShape(); 
+        
+        triangle(173, 423, 187, 420, 167, 437);
+        
+        beginShape();
+        curveVertex(164, 428);
+        curveVertex(164, 428);
+        curveVertex(167, 428);
+        curveVertex(165, 429);
+        curveVertex(163, 432);
+        curveVertex(163, 430);
+        curveVertex(156, 444);
+        curveVertex(172, 435);
+        curveVertex(169, 428);
+        curveVertex(169, 428);
+        endShape(); 
+        
+         beginShape();
+        curveVertex(155, 444);
+        curveVertex(155, 444); 
+        curveVertex(152, 453);
+        curveVertex(152, 450);
+        curveVertex(151, 452);
+        curveVertex(150, 452);
+        curveVertex(147, 462);
+        curveVertex(146, 467);
+        curveVertex(152, 461);
+        curveVertex(155, 458);
+        curveVertex(155, 455);
+        curveVertex(155, 450);
+        curveVertex(155, 450);
+        endShape(); 
+        
     }
+    
+    private void tongue() {
+        fill(121, 74, 90);    
+       beginShape();
+        curveVertex(131, 406);
+        curveVertex(131, 406);
+        //curveVertex(130, 413); 
+        //curveVertex(127, 413);
+        curveVertex(123, 412);
+        curveVertex(120, 415);
+        curveVertex(117, 418);
+        curveVertex(115, 426);
+        curveVertex(114, 432);
+        curveVertex(109, 452);
+        curveVertex(109, 465);
+        curveVertex(110, 475);
+        curveVertex(115, 482);
+        curveVertex(120, 486);
+        curveVertex(127, 488);
+        curveVertex(137, 478);
+        curveVertex(142, 471); 
+        curveVertex(145, 468);
+        curveVertex(148, 456);
+        curveVertex(154, 448);
+        curveVertex(158, 439);
+        curveVertex(163, 430);
+        curveVertex(166, 425);
+        curveVertex(154, 421);
+        curveVertex(145, 417);
+        curveVertex(137, 410);
+       curveVertex(131, 406);
+        curveVertex(131, 406);
+        endShape(); 
+    }
+    
+    private void leftEye() {
+      fill(133, 127, 134);    
+      //fill(0, 0, 0);
+       beginShape();
+       curveVertex(122, 340);
+        curveVertex(122, 340);
+        curveVertex(126, 332);
+        curveVertex(128, 332);
+        curveVertex(132, 325);
+        curveVertex(138, 317);
+        curveVertex(138, 315);
+        curveVertex(143, 313);
+        curveVertex(140, 316);
+        curveVertex(143, 311);
+        endShape();
+
+        fill(132, 127, 124);
+        //noFill();
+        beginShape();
+        curveVertex(145, 313);
+        curveVertex(160, 302);
+        curveVertex(166, 292);
+        curveVertex(170, 282);
+        curveVertex(167, 270);
+        curveVertex(161, 269);
+        curveVertex(154, 275);
+        curveVertex(152, 285);
+        curveVertex(149, 293);
+        curveVertex(145, 303);
+        curveVertex(143, 313);
+        curveVertex(143, 313);
+        endShape();
+
+        fill(0, 0, 0);
+        beginShape();
+        curveVertex(166, 290);
+        curveVertex(161, 287);
+        curveVertex(156, 287);
+        curveVertex(153, 302);
+        curveVertex(155, 300);
+        curveVertex(155, 304);
+        curveVertex(161, 301);
+        curveVertex(163, 297);
+        curveVertex(165, 293);
+        curveVertex(166, 290);
+        curveVertex(166, 290);
+        endShape();
+        
+        //stroke(4);
+        fill(0, 0, 0);
+        beginShape();
+        curveVertex(167, 289);
+        curveVertex(167, 289);
+        curveVertex(165, 287);
+        curveVertex(162, 284);
+        curveVertex(160, 285);
+        curveVertex(157, 285);
+        curveVertex(157, 285);
+        endShape();
+    }
+
+    private void rightEye() {
+       fill(21, 18, 17);
+        beginShape();
+        curveVertex(201, 329);
+        curveVertex(211, 326);
+        curveVertex(215, 326);
+        curveVertex(220, 331);
+        curveVertex(222, 335);
+        curveVertex(223, 337);
+        curveVertex(226, 339);
+        curveVertex(227, 339);
+        curveVertex(222, 339);
+        curveVertex(216, 343);
+        curveVertex(213, 343);
+        curveVertex(209, 343);
+        curveVertex(206, 340);
+        curveVertex(204, 338);
+        curveVertex(203, 337);
+        curveVertex(200, 336);
+        curveVertex(200, 333);
+        curveVertex(201, 329);
+        endShape();
+    }
+    private boolean showImage = false;
 }
