@@ -1,26 +1,21 @@
 PImage img;  
 //PShape star;
-
+BelleFille belleFille = new BelleFille();
 void settings() {
  size(800,500); 
 }
 void setup(){
-  
  //background(#907E7C);
- img = loadImage("bg.jpg"); 
+img = loadImage("bg.jpg"); 
 image(img, 500, 600); 
 img.resize(800, 2000);
 image(img, 0, 0);
+belleFilleImage();
 }
 
 void draw(){
  surface.setTitle(mouseX + ", " + mouseY);
-
-//face 
-//noFill();
-//ellipseMode(CENTER);
-//ellipse(466, 320, 245,350);
-//noFill();
+belleFille();
 fill(#99776E);
 beginShape();
 curveVertex(358,  315);
@@ -146,17 +141,7 @@ stroke(255,255);
 strokeWeight(2);
 ellipse(582,360,3,5);
 ellipse(582,370,3,5);
-//beginShape();
-//curveVertex(585, 302);
-//curveVertex(585, 302);
-//curveVertex(595, 312);
-//curveVertex(590, 334);
-//curveVertex(582, 345);
-//curveVertex(582, 345);
-//endShape();
 
-//neck
-//noFill();
 fill(#765754);
 stroke(#5A413D,255);
 strokeWeight(2);
@@ -177,5 +162,58 @@ curveVertex(548, 467);
 curveVertex(531, 500);
 curveVertex(531, 500);
 endShape();
+
  
+ //Belle Fille
+
+
+        //curveVertex(115, 394);
+        //curveVertex(114, 384);
+        //curveVertex(115, 385);
+        //curveVertex(115, 382);
+        //curveVertex(113, 375);
+        //curveVertex(113, 371);
+        //curveVertex(113, 367);
+        //curveVertex(115, 365);
+        //curveVertex(112, 367);
+        //curveVertex(112, 358);
+        //curveVertex(111, 351);
+        //curveVertex(112, 355);
+        //curveVertex(115, 348);
+        //curveVertex(114, 350);
+        //curveVertex(116, 348);
+        //curveVertex(117, 346);
+        //curveVertex(114, 346);
+        //curveVertex(115, 340);
+        //curveVertex(115, 338);
+        //curveVertex(116, 331);
+        //curveVertex(117, 330);
+        //curveVertex(115, 325);
+        //curveVertex(117, 324);
+        //curveVertex(120, 314);
+        //curveVertex(118, 318);
+        //curveVertex(124, 303);
+        //curveVertex(121, 307);
+        //curveVertex(122, 299);
+        //curveVertex(123, 297);
+        //curveVertex(124, 292);
+        //curveVertex(123, 287);
+        //curveVertex(125, 286);
+        //curveVertex(126, 281);
+        //curveVertex(128, 276);
+        //curveVertex(129, 277);
+        //curveVertex(128, 265);
+        //curveVertex(126, 263);
+        //curveVertex(132, 257);
+        //curveVertex(131, 256);
+        //curveVertex(136, 253);
+        //curveVertex(137, 250);
+        //curveVertex(136, 248);
+        //curveVertex(137, 245);
+        //curveVertex(139, 245);
+        //curveVertex(145, 246);
+        //curveVertex(149, 245);
+        //curveVertex(150, 239);
+        //endShape();
+
 }
